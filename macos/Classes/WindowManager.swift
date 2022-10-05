@@ -113,6 +113,7 @@ public class WindowManager: NSObject, NSWindowDelegate {
     public func hide() {
         DispatchQueue.main.async {
             self.mainWindow.orderOut(nil)
+            NSApp.hide(nil)
         }
     }
     
